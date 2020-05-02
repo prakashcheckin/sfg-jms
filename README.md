@@ -1,8 +1,12 @@
-# SFG JMS Examples
+# Spring Boot JMS Example
 
-This repository contains source code examples used to support my on-line courses about the Spring Framework.
+Steps to install ActiveMQ
 
-You can learn more about the courses here:
-* [Spring Boot Microservices with Spring Cloud](https://www.udemy.com/spring-boot-microservices-with-spring-cloud-beginner-to-guru/?couponCode=GIT_HUB2)
-* [Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC)
-* [Testing Spring Boot: Beginner to Guru](https://www.udemy.com/testing-spring-boot-beginner-to-guru/?couponCode=GITHUB_REPO_SF5B2G)
+1. Install ActiveMQ - ActiveMq will download in ZIP folder and extract it
+2. Create a Brocker - Go to the path where ZIP folder Unzipped. C:\Users\Prakash\softwares\ActiveMQ\apache-artemis-2.11.0\bin
+            Exectue following command to create a brocker -  # artemis create /{path where we want to create a brocker}/{Brocker name}
+3. RUN the Brocker - go to the brocker path. Example - C:\Users\Prakash\softwares\ActiveMQ\Mybroker\bin
+            Execute following command to run the brocker -  # artemis run
+
+
+Once the brocker up and running, we can run the code, spring boot will pick the activemq brocker automatically.
